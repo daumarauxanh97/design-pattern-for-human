@@ -59,7 +59,7 @@ Wikipedia định nghĩa như sau:
 🏠 Simple Factory
 --------------
 Ví dụ thực tế
-> Hãy xem xét, bạn đang xây dựng một ngôi nhà và bạn cần cửa ra vào. Bạn có thể mặc quần áo thợ mộc, mang một ít gỗ, keo, đinh và tất cả các dụng cụ cần thiết để xây cửa và bắt đầu xây dựng nó trong nhà hoặc bạn chỉ cần gọi nhà máy và nhận cửa được xây dựng cho bạn để bạn không cần phải tìm hiểu bất cứ điều gì về việc làm cửa hoặc để đối phó với mớ hỗn độn mà đi kèm với làm cho nó..
+> Hãy xem xét, bạn đang xây dựng một ngôi nhà và bạn cần cửa ra vào. Bạn có thể mặc quần áo thợ mộc, mang một ít gỗ, keo, đinh và tất cả các dụng cụ cần thiết để xây cửa và bắt đầu xây dựng nó trong nhà hoặc bạn chỉ cần gọi nhà máy và nhận cửa được xây dựng cho bạn để bạn không cần phải tìm hiểu bất cứ điều gì về việc làm cửa hoặc để đối phó với mớ hỗn độn mà đi kèm với việc làm ra nó.
 
 Nói một cách đơn giản
 > Simple factory chỉ đơn giản là tạo ra những phiên bản cho client mà không cần lộ ra bất kì một logic về việc khởi tạo nào tới phía người dùng.
@@ -128,14 +128,14 @@ $door2 = DoorFactory::makeDoor(50, 100);
 
 **Sử dụng khi nào?**
 
-Khi tạo một đối tượng không chỉ là một vài nhiệm vụ và liên quan đến một số logic, nó có ý nghĩa để đặt nó trong một factory chuyên dụng thay vì lặp lại cùng một mã ở khắp mọi nơi.
+Khi tạo một đối tượng không chỉ là một vài nhiệm vụ và liên quan đến một số logic, hợp lý khi đặt nó trong một factory chuyên dụng thay vì lặp lại cùng một mã ở khắp mọi nơi.
 
 🏭 Factory method
 --------------
 
 Ví dụ thực tế
 
-> Xem xét trường hợp của một người quản lý về tuyển dụng. Một người không thể phỏng vấn ở mỗi vị trí. Dựa trên những công việc đang mở, cô ấy phải quyết định và ủy nhiệm các bước phỏng vấn cho những người khác nhau..
+> Xem xét trường hợp của một người quản lý về tuyển dụng. Một người không thể phỏng vấn mọi vị trí. Dựa trên những công việc đang mở, cô ấy phải quyết định và ủy nhiệm các bước phỏng vấn cho những người khác nhau..
 
 Nói một cách đơn giản
 > Nó cung cấp một cách để ủy quyền logic instantiation cho các lớp con. 
@@ -226,7 +226,7 @@ Nó hữu dụng khi có một số việc được sử lý chung trong một c
 ----------------
 
 Ví dụ thực tế
->Mở rộng ví dụ cửa của chúng tôi từ Simple Factory. Căn cứ vào nhu cầu của bạn, bạn có thể nhận được một cánh cửa gỗ từ một cửa gỗ, cửa sắt từ một cửa hàng sắt hoặc cửa nhựa PVC từ cửa hàng liên quan. Thêm vào đó bạn có thể cần một chàng trai với các loại đặc sản khác nhau để phù hợp với cánh cửa, ví dụ như thợ mộc cho cửa gỗ, thợ hàn cho cửa sắt vv Như bạn thấy có sự phụ thuộc giữa cửa ra vào, cửa gỗ cần thợ mộc, cửa sắt cần thợ hàn, v.v.
+>Mở rộng ví dụ cửa của chúng tôi từ Simple Factory. Căn cứ vào nhu cầu của bạn, bạn có thể nhận được một cánh cửa gỗ từ một cưa hàng cửa gỗ, cửa sắt từ một cửa hàng sắt hoặc cửa nhựa PVC từ cửa hàng liên quan. Thêm vào đó bạn có thể cần một chàng trai với các đặc điểm khác nhau để phù hợp với cánh cửa, ví dụ như thợ mộc cho cửa gỗ, thợ hàn cho cửa sắt vv Như bạn thấy có sự phụ thuộc giữa cửa ra vào, cửa gỗ cần thợ mộc, cửa sắt cần thợ hàn, v.v.
 
 Nói một cách ngắn gọn
 > một factory của các factory; một factory nhóm những cá thể nhưng các factory liên kết/phụ thuộc lẫn nhau mà không cần chỉ rõ các class cụ thể của nó.
@@ -463,7 +463,7 @@ Khi có thể có một số đặc điểm của object và tránh việc chố
 🐑 Prototype
 ------------
 Ví dụ thực tế
-> Bạn có nhớ dolly? Con cừu mà được nhân bản! Việc cho phép không nhận những thông tin chi tiết nhưng điểm mấu chốt ở đây là tất cả những thứ được nhân bản.
+> Bạn có nhớ dolly? Con cừu mà được nhân bản! Không đi vào thông tin chi tiết nhưng điểm mấu chốt ở đây là tất cả những thứ được nhân bản.
 
 Nói một cách ngắn gọn
 > Việc tạo object dựa trên một object đã tồn tại thông qua việc nhân bản.
@@ -543,7 +543,7 @@ Nói một cách ngắn gọn
 Wikipedia định nghĩa là
 >Trong kĩ nghệ phần mềm,singleton patternn là một mẫu thiết kế phần mềm hạn chế sự khởi tạo của một lớp thành một đối tượng. Điều này rất hữu ích khi cần một đối tượng chính xác để điều phối các hành động trên toàn hệ thống..
 
-Singleton pattern thực sự được coi là một mô hình anti-pattern và nên tránh lạm dụng nó . Nó không nhất thiết là xấu và có thể có một số trường hợp sử dụng hợp lệ nhưng nên được sử dụng thận trọng vì nó đưa ra một trạng thái toàn cục trong ứng dụng của bạn và thay đổi nó ở một nơi có thể ảnh hưởng đến các khu vực khác và nó có thể trở nên khá khó khăn để gỡ lỗi. Điều tệ hại khác về họ là nó làm cho mã của bạn được kết hợp chặt chẽ cộng với việc singleton có thể khó khăn..
+Singleton pattern thực sự được coi là một mô hình anti-pattern và nên tránh lạm dụng nó . Nó không nhất thiết là xấu và có thể có một số trường hợp sử dụng hợp lệ nhưng nên được sử dụng thận trọng vì nó đưa ra một trạng thái toàn cục trong ứng dụng của bạn và thay đổi nó ở một nơi có thể ảnh hưởng đến các khu vực khác và nó có thể trở nên khá khó khăn để gỡ lỗi. Điều tệ hại khác về chúng là nó làm cho mã của bạn được kết hợp chặt chẽ cộng với việc thay đổi singleton có thể khó khăn..
 
 **Ví dụ về lập trình**
 
